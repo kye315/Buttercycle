@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kaige\\Desktop\\Buttercycle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|c:\\users\\kaige\\desktop\\buttercycle\\assets\\scripts\\constrainrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constrainrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConstrainRotation.cs",
+              "DocumentMoniker": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\ConstrainRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ConstrainRotation.cs",
+              "ToolTip": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\ConstrainRotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ConstrainRotation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T23:45:05.457Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
