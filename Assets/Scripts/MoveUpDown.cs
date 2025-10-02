@@ -17,7 +17,7 @@ public class MoveUpDown : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-            if (!active && collision.transform.tag == "Player")
+            if (!active && collision.transform.tag == "Wheel")
             {
                 active = true;
                 GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
@@ -29,7 +29,7 @@ public class MoveUpDown : MonoBehaviour
     {
         if(active)
         {
-            transform.position += new Vector3(0,3*Time.deltaTime,0);
+            transform.position += new Vector3(0,6*Time.deltaTime,0);
         }
     }
 }

@@ -6,7 +6,7 @@ public class KillHuman : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Jumper")
+        if (collision.gameObject.tag == "Wheel" || collision.gameObject.tag == "Jumper")
         {
             Controller gcip = collision.transform.GetComponentInParent<Controller>();
             if (collision.transform.GetComponentsInParent<Controller>() != null) {
