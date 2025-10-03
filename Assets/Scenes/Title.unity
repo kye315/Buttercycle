@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028338, g: 0.22571345, b: 0.30692208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1011,7 +1011,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999997, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2299463, y: 1.1368544, z: -0.08683324}
+  m_ConnectedAnchor: {x: -0.2299463, y: 1.1368544, z: -0.08683323}
   serializedVersion: 2
   m_Spring: 400
   m_Damper: 0.2
@@ -2145,7 +2145,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.14733359, y: 6.6883, z: 0.046333466}
+  m_ConnectedAnchor: {x: 0.14733358, y: 6.6883, z: 0.046333466}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -14603,9 +14603,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'You are Crim Bogus, top clownalectual at the Ohio Circus, born and raised.
-    You are as slick as a chip and clean as a bite into a taco. You are performing
-    your most terrorific stunt yet in front of 1000.5+ people. You are cheesing with
-    excitement.
+    You are as slick as a chip and clean as a bite into a taco. You are about to
+    execute the most terrorific stunt ever performed in front of 1000.5+ people.
+    You are cheesing with anticipation.
 
     Press Space to begin.'
   m_isRightToLeft: 0
@@ -14634,7 +14634,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.4
+  m_fontSize: 23.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

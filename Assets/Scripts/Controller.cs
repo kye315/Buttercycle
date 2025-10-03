@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Events;
@@ -28,6 +29,8 @@ public class Controller : MonoBehaviour
     // accessible by others
     public bool dead = false;
 
+    public bool JumpLock = false; 
+
     // neck break countdown
     private bool neckCD = false;
     private float neckTicker = 10;
@@ -37,6 +40,12 @@ public class Controller : MonoBehaviour
 
     private TMP_Text txt;
 
+    // finale countdown
+    private bool inFinale;
+    private float finaleTicker = 5;
+
+    public GameObject fade;
+
     // grading information
 
     public bool RightArmGone = false;
@@ -45,6 +54,8 @@ public class Controller : MonoBehaviour
     public bool LeftLegGone = false;
 
     public UnityEvent TriggerArmBreak;
+
+    public GameObject grader;
 
     public UnityEvent TriggerLegBreak;
 
@@ -93,6 +104,8 @@ public class Controller : MonoBehaviour
                     transform.GetChild(i).GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                 }
             }
+            runSpeed = 0;
+            JumpLock = true;
         }
     }
 
@@ -105,6 +118,34 @@ public class Controller : MonoBehaviour
             txt = PreDeathGUIInstance.transform.GetChild(0).GetComponent<TMP_Text>();
         }
     }
+
+    public void lockJump()
+    {
+        JumpLock = true;
+    }
+
+    public void finale()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).GetComponent<Rigidbody>())
+            {
+                transform.GetChild(i).GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                transform.GetChild(i).GetComponent<Rigidbody>().useGravity = false;
+            }
+        }
+        jumping = false;
+        jumper.transform.localScale = jScale;
+        jumping = true;
+        neckCD = false;
+        runSpeed = 0;
+        inFinale = true;
+
+        grader.GetComponent<Grader>().Grades = (new bool[] { LeftArmGone,LeftLegGone,RightArmGone,RightLegGone});
+         
+        DontDestroyOnLoad(grader.gameObject);
+    }
+
     public void kill()
     {
         Debug.Log("Kill!");
@@ -126,6 +167,15 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (inFinale)
+        {
+            finaleTicker -= Time.deltaTime;
+            fade.GetComponent<Image>().color = new Color(1, 1, 1, (1 - (finaleTicker / 10)));
+            if (finaleTicker <= 0)
+            {
+                SceneManager.LoadScene("Ending1");
+            }
+        }
         if (!dead)
         {
             if (jumping)
@@ -148,7 +198,7 @@ public class Controller : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.W))
             {
-                if (!jumping)
+                if (!jumping && !JumpLock)
                 {
                     jumping = true;
                 }
