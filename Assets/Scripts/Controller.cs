@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.Events;
 
 
 public class Controller : MonoBehaviour
@@ -36,12 +37,63 @@ public class Controller : MonoBehaviour
 
     private TMP_Text txt;
 
+    // grading information
+
+    public bool RightArmGone = false;
+    public bool LeftArmGone = false;
+    public bool RightLegGone = false;
+    public bool LeftLegGone = false;
+
+    public UnityEvent TriggerArmBreak;
+
+    public UnityEvent TriggerLegBreak;
+
     // Start is called before the first frame update
     void Start()
     {
         jScale = jumper.transform.localScale;
         wRB = wheel.GetComponent<Rigidbody>();
         jCJ = jumper.GetComponent<ConfigurableJoint>();
+    }
+
+    public void armBreak(int LeftOrRight)
+    {
+        switch (LeftOrRight) {
+            case 0: // left
+                LeftArmGone = true;
+                break;
+            case 1: // right
+                RightArmGone = true;
+                break;
+        }
+        if (RightArmGone && LeftArmGone)
+        {
+            TriggerArmBreak.Invoke();
+        }
+    }
+
+    public void legBreak(int LeftOrRight)
+    {
+        switch (LeftOrRight)
+        {
+            case 0: // left
+                LeftLegGone = true;
+                break;
+            case 1: // right
+                RightLegGone = true;
+                break;
+        }
+        if (LeftLegGone && RightLegGone)
+        {
+            TriggerLegBreak.Invoke(); // incapacitated
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                if (transform.GetChild(i).GetComponent<Rigidbody>())
+                {
+                    transform.GetChild(i).GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                }
+            }
+        }
     }
 
     public void headBreak()

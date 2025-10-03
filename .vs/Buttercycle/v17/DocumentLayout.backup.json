@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\kaige\\Desktop\\Buttercycle\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|c:\\users\\kaige\\desktop\\buttercycle\\assets\\scripts\\spin3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spin3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|c:\\users\\kaige\\desktop\\buttercycle\\assets\\scripts\\destructablecube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\destructablecube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|c:\\users\\kaige\\desktop\\buttercycle\\assets\\scripts\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|C:\\Users\\kaige\\Desktop\\Buttercycle\\assets\\scripts\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\triggerevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|c:\\users\\kaige\\desktop\\buttercycle\\assets\\scripts\\jointtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|C:\\Users\\kaige\\Desktop\\Buttercycle\\assets\\scripts\\jointtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D96BD052-4751-DF0D-8BD5-77E02EB7CF6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\jointtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Spin3D.cs",
+              "DocumentMoniker": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\Spin3D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spin3D.cs",
+              "ToolTip": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\Spin3D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spin3D.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T10:15:12.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DestructableCube.cs",
               "DocumentMoniker": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\DestructableCube.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DestructableCube.cs",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "JointTrigger.cs",
               "DocumentMoniker": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\JointTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JointTrigger.cs",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "Assets\\Scripts\\JointTrigger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T09:24:00.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T09:24:00.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TriggerEvent.cs",
               "DocumentMoniker": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\TriggerEvent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TriggerEvent.cs",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TriggerEvent.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T09:22:44.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T09:22:44.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Controller.cs",
               "DocumentMoniker": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\Controller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller.cs",
@@ -81,12 +96,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Controller.cs",
               "ViewState": "AgIAAF8AAAAAAAAAAAAqwGsAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T09:22:37.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T09:22:37.201Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MoveUpDown.cs",
               "DocumentMoniker": "C:\\Users\\kaige\\Desktop\\Buttercycle\\Assets\\Scripts\\MoveUpDown.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MoveUpDown.cs",
@@ -94,8 +108,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MoveUpDown.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T08:57:34.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T08:57:34.605Z"
             }
           ]
         }
