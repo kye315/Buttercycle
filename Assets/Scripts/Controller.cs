@@ -52,6 +52,8 @@ public class Controller : MonoBehaviour
     public bool LeftArmGone = false;
     public bool RightLegGone = false;
     public bool LeftLegGone = false;
+    public bool HatGone = false;
+    public bool NeckGone = false;
 
     public UnityEvent TriggerArmBreak;
 
@@ -117,6 +119,7 @@ public class Controller : MonoBehaviour
             PreDeathGUIInstance = Instantiate(PreDeathGUI, canvas.transform);
             txt = PreDeathGUIInstance.transform.GetChild(0).GetComponent<TMP_Text>();
         }
+        NeckGone = true;
     }
 
     public void lockJump()
@@ -141,7 +144,7 @@ public class Controller : MonoBehaviour
         runSpeed = 0;
         inFinale = true;
 
-        grader.GetComponent<Grader>().Grades = (new bool[] { LeftArmGone,LeftLegGone,RightArmGone,RightLegGone});
+        grader.GetComponent<Grader>().Grades = (new bool[] { LeftArmGone,LeftLegGone,RightArmGone,RightLegGone,HatGone,NeckGone});
          
         DontDestroyOnLoad(grader.gameObject);
     }
@@ -162,6 +165,11 @@ public class Controller : MonoBehaviour
             }
         }
         dead = true;
+    }
+
+    public void loseHat()
+    {
+        HatGone = true;
     }
 
     // Update is called once per frame

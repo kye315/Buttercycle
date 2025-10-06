@@ -8,6 +8,8 @@ using UnityEngine.Events;
 public class MoveUpDown : MonoBehaviour
 {
 
+    // The reason this is in "Ending1" despite not moving is because it's an easy way to trigger events upon collision
+
     public float speed = 6;
 
     public float max = 99999999999;
@@ -16,12 +18,7 @@ public class MoveUpDown : MonoBehaviour
 
     public UnityEvent onBeginMovement;
 
-    // Start is called before the first frame update
-    void Start()
-    { 
-        
-    }
-
+    
     private void OnCollisionEnter(Collision collision)
     {
             if (!active && collision.transform.tag == "Wheel")

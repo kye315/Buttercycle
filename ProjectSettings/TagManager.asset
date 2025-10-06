@@ -8,6 +8,8 @@ TagManager:
   - Pieces
   - NeckOrHead
   - Wheel
+  - Butt
+  - Grader
   layers:
   - Default
   - TransparentFX
