@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6974125315012858402}
   - component: {fileID: 5966112021436733477}
   - component: {fileID: 4612397083580288438}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 6
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ FixedJoint:
   m_GameObject: {fileID: 152357208800714015}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 2750639446197558238}
   - component: {fileID: 4095336121598237173}
   - component: {fileID: 2631657622357592346}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ FixedJoint:
   m_GameObject: {fileID: 1298676272077129181}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 1355855447219579706}
   - component: {fileID: 3863370897905406287}
   - component: {fileID: 510713666077558394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 7
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ FixedJoint:
   m_GameObject: {fileID: 2854687311174210479}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 1706661603537497220}
   - component: {fileID: 8090258021636196373}
   - component: {fileID: 8009432829280594849}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 1
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ FixedJoint:
   m_GameObject: {fileID: 3448370380434135029}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 184254848844669440}
   - component: {fileID: 6525011713979240188}
   - component: {fileID: 910355868868581327}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 2
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ FixedJoint:
   m_GameObject: {fileID: 4376715005040947577}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -778,7 +778,7 @@ GameObject:
   - component: {fileID: 1587781156238080968}
   - component: {fileID: 6608545453276167214}
   - component: {fileID: 5484976353296342182}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 8
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ FixedJoint:
   m_GameObject: {fileID: 4630991826952872270}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 7263018850540767903}
   - component: {fileID: 8657673335193751951}
   - component: {fileID: 3543929850800928459}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 3
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ FixedJoint:
   m_GameObject: {fileID: 4670358219925180342}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -1060,7 +1060,7 @@ GameObject:
   - component: {fileID: 5350632636849320391}
   - component: {fileID: 8794088828295560397}
   - component: {fileID: 9036717259987453403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Core
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -1174,7 +1174,7 @@ GameObject:
   - component: {fileID: 5866025206562090656}
   - component: {fileID: 2984160360779532902}
   - component: {fileID: 5977014912834791902}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 5
   m_TagString: Pieces
   m_Icon: {fileID: 0}
@@ -1282,7 +1282,7 @@ FixedJoint:
   m_GameObject: {fileID: 7799017118641953869}
   m_ConnectedBody: {fileID: 9036717259987453403}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 150
+  m_BreakForce: 35
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1

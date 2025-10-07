@@ -13,6 +13,10 @@ public class Controller : MonoBehaviour
     private Rigidbody wRB;
 
     public Canvas canvas;
+    public GameObject Pause;
+
+    public GameObject BGM1;
+    public GameObject BGM2;
 
     public GameObject GameOverScreen;
 
@@ -67,6 +71,19 @@ public class Controller : MonoBehaviour
         jScale = jumper.transform.localScale;
         wRB = wheel.GetComponent<Rigidbody>();
         jCJ = jumper.GetComponent<ConfigurableJoint>();
+        Time.timeScale = 1;
+    }
+
+    public void TriggerPause()
+    {
+        Pause.SetActive(true);
+        Time.timeScale = 0;
+    }
+    
+    public void TriggerUnPause()
+    {
+        Pause.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void armBreak(int LeftOrRight)
@@ -178,6 +195,8 @@ public class Controller : MonoBehaviour
         if (inFinale)
         {
             finaleTicker -= Time.deltaTime;
+            BGM1.GetComponent<AudioSource>().volume -= Time.deltaTime;
+            BGM2.GetComponent<AudioSource>().volume -= Time.deltaTime;
             fade.GetComponent<Image>().color = new Color(1, 1, 1, (1 - (finaleTicker / 10)));
             if (finaleTicker <= 0)
             {
@@ -211,6 +230,14 @@ public class Controller : MonoBehaviour
                     jumping = true;
                 }
             }
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                if (Pause.activeSelf  == true) {
+                    TriggerUnPause();
+                } else {
+                    TriggerPause();
+                }
+            }
 
             if (neckCD)
             {
@@ -227,6 +254,8 @@ public class Controller : MonoBehaviour
         }
         else
         {
+            BGM1.GetComponent<AudioSource>().volume -= Time.deltaTime;
+            BGM2.GetComponent<AudioSource>().volume -= Time.deltaTime;
             if (Time.timeScale > 0)
             {
                 Time.timeScale -= 0.5f * Time.deltaTime;

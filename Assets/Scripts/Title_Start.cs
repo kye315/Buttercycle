@@ -15,6 +15,11 @@ public class Title_Start : MonoBehaviour
 
     public GameObject canvas;
 
+    void Start() 
+    {
+        Time.timeScale = 1;
+    }
+
     void Update()
     {
         if (!started) // wait for input
